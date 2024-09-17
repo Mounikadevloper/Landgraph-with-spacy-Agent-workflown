@@ -58,3 +58,4 @@ else:
             st.json(feedback)
         else:
             st.warning("Please enter a query.")
+
