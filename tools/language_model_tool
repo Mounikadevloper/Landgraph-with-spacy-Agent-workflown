@@ -1,0 +1,9 @@
+from transformers import pipeline
+
+class LanguageModelTool:
+    def __init__(self):
+        self.generator = pipeline('text-generation', model='gpt2')
+
+    def apply_task(self, task):
+        result = self.generator(task, max_length=50)
+        return result
